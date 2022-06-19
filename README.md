@@ -1,2 +1,2 @@
-# demo_docker_repo
-Demo repo for Jenkins track
+# How-to-Push-docker-image-to-Docker-Hub-using-Jenkins-Pipeline
+How to Push docker image to Docker Hub using Jenkins Pipeline

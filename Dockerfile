@@ -1,6 +1,12 @@
-FROM nginx:1
+FROM node:latest
 
+WORKDIR /usr/src/app
 
-COPY . /usr/share/nginx/html
+COPY package*.json ./
 
-COPY default.conf /etc/nginx/conf.d/
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+CMD [ "node", "index.js" ]
